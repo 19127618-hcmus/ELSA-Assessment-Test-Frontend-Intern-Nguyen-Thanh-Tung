@@ -23,6 +23,7 @@
 .banner-sub-title {
     font-family: "BrownVN", Arial, Helvetica, sans-serif;
     font-style: normal;
+    padding: 0px 8px;
 }
 .banner-main-title {
     font-weight: 700;
@@ -72,7 +73,6 @@
 .subtitle-mobi-size{
     display: none;
     margin: 24px 0px !important;
-    display: block !important;
 }
 /* image in banner */
 .banner-img {
@@ -387,11 +387,20 @@ input[type="radio"]:checked {
     }
     /* banner */
     .banner{
-        padding: 72px 0px;
+        padding: 8px 0px;
+        height: calc(100vh - 95px);
+    }
+    .banner-text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
     }
     .banner-text-title h1, .section3-main-title{
         font-size: 35px !important;
         padding: 0px 4px;
+        z-index: 1;
     }
     .banner-text-title h4{
         font-size: 20px;
@@ -400,7 +409,7 @@ input[type="radio"]:checked {
         display: none;
     }
     .subtitle-mobi-size{
-        display: inline;
+        display: block;
     }
     .banner-text-submit-btn{
         z-index: 1;
