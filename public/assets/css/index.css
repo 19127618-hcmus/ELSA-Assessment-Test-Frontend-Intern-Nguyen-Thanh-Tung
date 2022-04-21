@@ -58,6 +58,7 @@
     font-size: 30px;
     line-height: 42px;
     color: #ffffff;
+    text-align: center;
 }
 .banner-text-submit-btn:hover {
     background: linear-gradient(
@@ -67,6 +68,11 @@
         hsl(182, 72%, 68%) 38.61%,
         hsl(207, 100%, 77%) 68.19%
     );
+}
+.subtitle-mobi-size{
+    display: none;
+    margin: 24px 0px !important;
+    display: block !important;
 }
 /* image in banner */
 .banner-img {
@@ -120,6 +126,7 @@
     width: 100%;
     z-index: 1;
     background-color: #ffffff;
+    padding-bottom: 24px;
 }
 
 /* form */
@@ -138,9 +145,10 @@
     margin-left: 6%;
     z-index: 1;
 }
-#noti-price{
+#noti-price {
     margin: 4px 24px 20px;
 }
+
 /* form header */
 .form-header {
     /* width: 600px; */
@@ -160,8 +168,6 @@
 }
 
 /*  */
-.form-body {
-}
 .input-row {
     margin: 16px 24px;
 }
@@ -174,7 +180,7 @@
     color: #06bae8;
     margin: 4px 0px;
 }
-.input-box input{
+.input-box input {
     padding: 0px 8px;
     font-family: "BrownVN", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -191,11 +197,12 @@
     height: 60px;
 }
 
-input[type="text"]:focus, input[type="email"]:focus{
+input[type="text"]:focus,
+input[type="email"]:focus {
     outline: none;
-    box-shadow: 0px 0px 5px #61C5FA;
-    border:1px solid #5AB0DB;
-    }
+    box-shadow: 0px 0px 5px #61c5fa;
+    border: 1px solid #5ab0db;
+}
 
 /* form radio */
 .form-radio {
@@ -218,10 +225,6 @@ input[type="radio"]:checked {
 #radio1year {
     margin-left: 1px;
 }
-#radioLifetime {
-    /* margin-left: 130px; */
-    /* float: right; */
-}
 .radio-title {
     font-family: "BrownVN", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -233,7 +236,7 @@ input[type="radio"]:checked {
 }
 
 /* price */
-.price{
+.price {
     color: #0bbae7;
     font-family: "BrownVN", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -243,7 +246,7 @@ input[type="radio"]:checked {
 }
 
 /* submit btn */
-.form-smBtn{
+.form-smBtn {
     margin-bottom: 24px;
 }
 #form-smBtn-content {
@@ -334,33 +337,120 @@ input[type="radio"]:checked {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    margin: 16px 60px;
+    margin: 16px 40px;
     text-align: justify;
 }
 
 @media only screen and (max-width: 1370px) {
-    .section2-img1{
+    .section2-img1 {
         width: 500px;
         top: 120px;
     }
-  }
- 
-  @media only screen and (max-width: 1185px) {
-    .section2-img{
+}
+
+@media only screen and (max-width: 1185px) {
+    .section2-img {
         position: absolute;
         top: 560px;
         right: 0;
     }
-  }
+}
 
-  @media only screen and (max-width: 900px) {
-      .banner-img, .banner-img-background, .banner-img-phone1, .section2-img{
+@media only screen and (max-width: 900px) {
+    .banner-img,
+    .banner-img-background,
+    .banner-img-phone1,
+    .section2-img {
         display: none !important;
     }
-    .banner-text{
+    .banner-text {
         width: 100%;
     }
-    .section2-form{
+    .section2-form {
         margin: auto;
     }
-  }
+}
+
+@media only screen and (max-width: 991px) {
+    .section3-body-content{
+        max-width: 330px;
+    }
+    .section3-body-content{
+        /* margin: 16px 86px; */
+        text-align: center;
+    }
+
+/* mobile */
+@media only screen and (max-width: 512px) {
+    html, body{
+        width: 100vw;
+    }
+    /* banner */
+    .banner{
+        padding: 72px 0px;
+    }
+    .banner-text-title h1, .section3-main-title{
+        font-size: 35px !important;
+        padding: 0px 4px;
+    }
+    .banner-text-title h4{
+        font-size: 20px;
+    }
+    .subtitle-pc-size {
+        display: none;
+    }
+    .subtitle-mobi-size{
+        display: inline;
+    }
+    .banner-text-submit-btn{
+        z-index: 1;
+        width: 240px;
+        height: 60px;
+    }
+
+    /* button */
+    .banner-smBtn-content{
+        font-size: 28px !important;
+    }
+    #form-smBtn-content{
+        font-size: 26px !important;
+    }
+
+    /* section 2 */
+    .section2 {
+        padding: 12px 4px 24px !important;
+        height: auto;
+    }
+    .section2-form{
+        min-width: 200px;
+        width: 95%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .form-header-content{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .form-radio{
+        flex-direction: column;
+    }
+    .form-radio-line{
+        margin: 12px 0px ;
+    }
+    #radioLifetime{
+        margin-left: 1px;
+    }
+    .section3-body-img{
+        width: 240px;
+    }
+    .section3-body-content{
+        margin: 16px 20px;
+        text-align: center;
+    }
+    /* footer */
+    .footer-content-text{
+        text-align: justify;
+        padding: 8px 12px;
+    }
+}
+}

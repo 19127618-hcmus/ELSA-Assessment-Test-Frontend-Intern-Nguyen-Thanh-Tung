@@ -1,0 +1,48 @@
+.modal-form {
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.modal-form-backgound {
+    background-color: rgba(100, 100, 100, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.modal-form-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    min-width: 320px;
+}
+.modal-form-success {
+    text-align: center;
+    margin: 16px;
+}
+.modal-form-success-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #06bae8;
+    padding: 8px;
+}
+.modal-form-success-content {
+    font-size: 16px;
+    color: #06bae8;
+    padding: 4px;
+}
+.close-btn {
+    position: absolute;
+    right: 2px;
+    top: -2px;
+    padding: 8px;
+    cursor: pointer;
+    color: red;
+}
